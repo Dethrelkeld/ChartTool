@@ -1,6 +1,7 @@
 
 
-let ctx = document.getElementById('envelopeChart')
+let ctx = document.getElementById('envelopeChart');
+
 
 
 
@@ -20,15 +21,15 @@ const data = {
         data: [ 34, 40, 58, 54], 
     }, {
         label: 'VC',
-        backgroundColor: 'green',
+        backgroundColor: 'blue',
         data: [105, 155, 208, 131]
     }, {
         label: 'VNE',
-        backgroundColor: 'blue',
+        backgroundColor: 'orange',
         data: [140, 215, 220, 182]
     }
 ]
-}
+};
 
 let config = {
     type: 'bar',
@@ -36,17 +37,24 @@ let config = {
     options: {
         scales: {
             xAxes: { stacked: true },
-            yAxes: { stacked: false },
-            // y: {
-            //    title: {
-            //        text: 'MPH'
-            //    },
-            //    display: false 
-            // }
+            yAxes: { stacked: false }
         },
+        
     }
 };
 
 
 
 let envelopeChart = new Chart(ctx, config);
+
+let tlChart = new Chart(document.getElementById('tlChart'), {
+    type: 'bar',
+    data: {
+       labels: labels,
+       datasets: [{
+            label: 'Take Off',
+            
+       },
+    ]
+    }
+});
