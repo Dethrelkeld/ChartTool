@@ -14,18 +14,26 @@ const labels = [
 const data = {
     labels: labels,
     datasets: [{
-        label: 'Dirty Stall Speed in MPH',
+        label: 'VS0',
         backgroundColor: 'red',
-        borderColor: 'white',
         data: [ 34, 40, 58]
-    }]
+    }, {
+        label: 'VC',
+        backgroundColor: 'green',
+        data: [105, 155, 205]
+    }, {
+        label: 'VNE',
+        backgroundColor: 'blue',
+        data: [140, 215, 220]
+    }
+]
 }
 
 let config = {
     type: 'bar',
     data, 
     options: {
-         
+        
         
     }
 };
