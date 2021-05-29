@@ -16,7 +16,7 @@ const data = {
     datasets: [{
         label: 'VS0',
         backgroundColor: 'red',
-        data: [ 34, 40, 58]
+        data: [ 34, 40, 58], 
     }, {
         label: 'VC',
         backgroundColor: 'green',
@@ -33,8 +33,16 @@ let config = {
     type: 'bar',
     data, 
     options: {
-        
-        
+        scales: {
+            xAxes: { stacked: true },
+            yAxes: { stacked: false },
+            // y: {
+            //    title: {
+            //        text: 'MPH'
+            //    },
+            //    display: false 
+            // }
+        },
     }
 };
 
