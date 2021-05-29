@@ -1,6 +1,9 @@
-let Chart = require('chart.js');
 
-let ctx = document.getElementById('myChart');
+
+let ctx = document.getElementById('myChart')
+
+
+
 
 const labels = [
     'CH-750SD',
@@ -11,8 +14,8 @@ const labels = [
 const data = {
     labels: labels,
     datasets: [{
-        label: 'Babys first dataset',
-        backgroundColor: 'white',
+        label: 'Dirty Stall Speed in MPH',
+        backgroundColor: 'red',
         borderColor: 'white',
         data: [ 34, 40, 58]
     }]
@@ -21,7 +24,10 @@ const data = {
 let config = {
     type: 'bar',
     data, 
-    options: {}
+    options: {
+         
+        
+    }
 };
 
 
