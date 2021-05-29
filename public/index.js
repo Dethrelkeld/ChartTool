@@ -53,7 +53,9 @@ let tlChart = new Chart(document.getElementById('tlChart'), {
        labels: labels,
        datasets: [{
             label: 'Take Off',
-            
+            backgroundColor: 'rgba(60, 204, 161, 0.616)',
+            data: [115, 325, 575, 805]
+
        },
     ]
     }
