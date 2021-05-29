@@ -1,8 +1,29 @@
 let Chart = require('chart.js');
+
 let ctx = document.getElementById('myChart');
-let myChart = new Chart(ctx, {
+
+const labels = [
+    'CH-750SD',
+    'S21',
+    'RV-8',
+];
+
+const data = {
+    labels: labels,
+    datasets: [{
+        label: 'Babys first dataset',
+        backgroundColor: 'white',
+        borderColor: 'white',
+        data: [ 34, 40, 58]
+    }]
+}
+
+let config = {
     type: 'bar',
-    data: {
-        labels: []
-    }
-});
+    data, 
+    options: {}
+};
+
+
+
+let myChart = new Chart(ctx, config);
