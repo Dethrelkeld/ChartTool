@@ -52,11 +52,17 @@ let tlChart = new Chart(document.getElementById('tlChart'), {
     data: {
        labels: labels,
        datasets: [{
-            label: 'Take Off',
+            label: 'Take Off Roll',
             backgroundColor: 'rgba(60, 204, 161, 0.616)',
             data: [115, 325, 575, 805]
-
-       },
+       }, {
+           label: 'Landing Roll',
+           backgroundColor: 'rgba(60, 98, 204, 0.616)', 
+           data: [150, 375, 500, 960]
+       }
     ]
+    },
+    options: {
+        indexAxis: 'y'
     }
 });
